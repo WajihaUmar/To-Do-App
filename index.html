@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./font-awesome-4.7.0 (1)/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0 (1)/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <div class="wrapper mx-auto mt-sm-2 pb-3">
+    <div class="header px-5">
+      <div class="row no-gutters">
+        <div class="col-2">
+          <p class="font-weight-bold" id="date"> </p>
+        </div>
+        <div class="col-10">
+          <div class="row no-gutters">
+            <p class="currentDate mb-0" id="month"> </p>
+          </div>
+          <div class="row no-gutters" >
+            <div class="col-6">
+              <p class="currentDate" id="year"> </p>
+            </div>
+            <div class="col-6">
+              <p class="currentDate text-right" id="day"> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-addon right-addon px-3">
+        <i class="fa fa-plus" aria-hidden="true" id="add-btn" onclick="addTask()"></i>
+        <i class="fa fa-pencil update_input" id="update-input-btn" aria-hidden="true"></i>
+        <input type="text" class="form-control" id="inputTask" placeholder="Enter your task"/>
+      </div>
+    </div>
+
+    <div class="tasks px-3 pb-4 mx-auto mb-0" id="todosList">
+    
+      <div class="start p-3 mt-4" id="starts">
+        <p class="greetings text-center mb-0"> Enter your schedule of the day! </p>
+      </div>
+
+    </div>
+
+    <div class="text-center del-all-div">
+      <i class="fa fa-trash-o del-all pt-2" aria-hidden="true" onclick="delAll()"></i>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

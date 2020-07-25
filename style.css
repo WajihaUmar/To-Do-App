@@ -1,0 +1,110 @@
+body {
+  background-color: #dfe4ea;
+}
+.wrapper {
+  width: 600px;
+  background-color: white;
+}
+.header {
+  height: 210px;
+  background: linear-gradient(#2d85b7, #35c5eb);
+}
+#date {
+  font-size: 65px;
+  padding-top: 0px !important;
+  margin: 0;
+  color: #1b3963;
+}
+#month {
+  margin-top: 23px;
+}
+.currentDate {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.update_input {
+  display: none;
+}
+.inner-addon { 
+  position: relative; 
+}
+.inner-addon .fa {
+  position: absolute;
+  padding: 12px;
+  padding-left: 14px !important;
+  /* pointer-events: none; */
+  cursor: pointer !important;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #1b3963;
+  color: white;
+}
+.right-addon .fa { 
+  right: 15px;
+}
+.right-addon input { 
+  padding-right: 30px; 
+  height: 40px;
+  border-radius: 19px;
+  border: none;
+}
+input[type="text"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+}
+
+.start {
+  box-shadow: 2px 5px 10px #dfe4ea;
+}
+.greetings {
+  font-size: 20px;
+}
+.tasks {
+  width: 95%;
+  position: relative;
+  top: -50px;
+  background-color: white !important;
+  border: 1px solid white;
+}
+/* #ffa1a3 #a1c0fe #ffdd95 #caacd9 #cbfea2 */
+.task {
+  box-shadow: 2px 5px 10px #dfe4ea;
+  border-radius: 5px;
+  border-left: 10px solid #2d85b7;
+}
+.update_icon,
+.del_icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+.del_icon:hover {
+  color: red;
+  transition: 0.4s;
+}
+.update_icon:hover {
+  color: blue;
+  transition: 0.4s;
+}
+
+.del-all-div {
+  margin-top: -35px;
+}
+.del-all {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: red;
+  box-shadow: 3px 7px 10px #cfd1d3;
+  cursor: pointer;
+}
+.del-all:hover {
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+  box-shadow: none;
+}
